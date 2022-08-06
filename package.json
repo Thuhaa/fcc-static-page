@@ -40,6 +40,7 @@
   },
   "devDependencies": {
     "eslint": "^8.0.1",
+    "eslint-config-prettier": "^8.5.0",
     "eslint-config-standard": "^17.0.0",
     "eslint-plugin-import": "^2.25.2",
     "eslint-plugin-n": "^15.0.0",
@@ -53,7 +54,7 @@
   "author": "Thuhaa <josephthuha@gmail.com>",
   "license": "MIT",
   "lint-staged": {
-    "*.js": "eslint --cache --fix",
-    "*.{js,css,md}": "prettier --write"
+    "*.{js,jsx,ts,tsx}, ": "eslint --cache --fix",
+    "*.{js,jsx,ts,tsx}": "prettier --write"
   }
 }
